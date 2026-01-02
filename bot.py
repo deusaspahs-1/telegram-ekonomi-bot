@@ -1,7 +1,8 @@
 import requests, time, json, os, threading, random
 
 # =============== AYARLAR ===============
-TOKEN = "8106484961:AAH0Cq5ym3dANeI43IOqAFhVPvX6tzHeZ_k"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 SUPER_ADMIN = 6270127370
 API = f"https://api.telegram.org/bot{TOKEN}/"
 DB_FILE = "db.json"
